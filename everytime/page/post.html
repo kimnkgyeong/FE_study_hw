@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에브리타임 글쓰기</title>
+    <link rel="stylesheet" href="../css/post.css" />
+  </head>
+  <body>
+    <div class="write-container">
+      <div id="write-collapsed" class="write-collapsed">
+        <span>새 글을 작성해주세요!</span>
+        <img src="../img/연필.png" alt="연필" style="width: 25px" />
+      </div>
+
+      <div id="write-expanded" class="write-expanded" style="display: none">
+        <input type="text" class="write-title" placeholder="글 제목" />
+        <textarea
+          class="write-content"
+          placeholder="커뮤니티 이용규칙을 준수해주세요..."
+        ></textarea>
+        <div class="rules-box">※ 정치·사회 관련 행위 금지... (규칙 내용)</div>
+        <div class="write-footer">
+          <div class="footer-icons"><span>#</span><span>📎</span></div>
+          <div class="footer-actions">
+            <label class="check-label"><input type="checkbox" /> 질문</label>
+            <button class="submit-btn">
+              <img src="../img/비밀게시판 불.png" style="width: 20px" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../post.js"></script>
+  </body>
+</html>
