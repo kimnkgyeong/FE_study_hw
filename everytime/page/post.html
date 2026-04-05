@@ -3,35 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>에브리타임 글쓰기</title>
-    <link rel="stylesheet" href="../css/post.css" />
+    <title>에브리타임 글 작성</title>
+    <link rel="stylesheet" href="post.css" />
   </head>
   <body>
-    <div class="write-container">
-      <div id="write-collapsed" class="write-collapsed">
-        <span>새 글을 작성해주세요!</span>
-        <img src="../img/연필.png" alt="연필" style="width: 25px" />
+    <div id="writeCollapsed" class="write-collapsed">새 글을 작성해주세요!</div>
+
+    <div id="writeExpanded" class="write-expanded hidden">
+      <input type="text" placeholder="글 제목" />
+      <textarea placeholder="내용을 입력하세요..."></textarea>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="questionCheck" />
+        <label for="questionCheck">질문</label>
       </div>
 
-      <div id="write-expanded" class="write-expanded" style="display: none">
-        <input type="text" class="write-title" placeholder="글 제목" />
-        <textarea
-          class="write-content"
-          placeholder="커뮤니티 이용규칙을 준수해주세요..."
-        ></textarea>
-        <div class="rules-box">※ 정치·사회 관련 행위 금지... (규칙 내용)</div>
-        <div class="write-footer">
-          <div class="footer-icons"><span>#</span><span>📎</span></div>
-          <div class="footer-actions">
-            <label class="check-label"><input type="checkbox" /> 질문</label>
-            <button class="submit-btn">
-              <img src="../img/비밀게시판 불.png" style="width: 20px" />
-            </button>
-          </div>
-        </div>
+      <button type="submit">작성</button>
+
+      <div id="questionInfoBox" class="info-box hidden">
+        <p>질문 글을 작성하면 게시판 상단에 일정 기간 노출되어...</p>
       </div>
     </div>
 
-    <script src="../post.js"></script>
+    <script src="post.js"></script>
   </body>
 </html>

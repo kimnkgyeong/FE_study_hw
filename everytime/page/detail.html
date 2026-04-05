@@ -1,0 +1,271 @@
+=<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에브리타임 - 덕성여대</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/detail.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="logo">
+          <img src="../img/nav.logo.png" alt="로고" />
+          <div class="logo-text">
+            <span class="sub-name">에브리타임</span>
+            <span class="main-name">덕성여대</span>
+          </div>
+        </div>
+        <ul class="main-nav">
+          <li class="active">게시판</li>
+          <li>시간표</li>
+          <li>강의실</li>
+          <li>학점계산기</li>
+          <li>친구</li>
+          <li>책방</li>
+          <li>캠퍼스픽</li>
+        </ul>
+        <div class="right">
+          <div class="icon-box"><img src="../img/채팅로고.svg" /></div>
+          <div class="icon-box"><img src="../img/에타 사람사진.svg" /></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sub-nav">
+      <div class="nav-container">
+        <div class="line"></div>
+        <div class="part">
+          <a href="#">자유게시판</a><a href="#">비밀게시판</a
+          ><a href="#">졸업생게시판</a> <a href="#">새내기게시판</a
+          ><a href="#">시사.이슈</a><a href="#">정보게시판</a
+          ><a href="#">이벤트게시판</a>
+        </div>
+
+        <div class="part">
+          <a href="#">홍보게시판</a><a href="#">동아리학회</a>
+        </div>
+        <div class="line"></div>
+        <div class="part">
+          <a href="#">취업・진로</a><a href="#">⭐👩‍🏫교직이수👩‍🏫⭐</a>
+          <a href="#">덕성 예비 공무원</a><a href="#">대학원 뿌슝뿌슝🔥🔥</a
+          ><a href="#">미래의 회계사</a>
+        </div>
+
+        <div class="part">
+          <a href="#">총학생회</a><a href="#">신문사</a
+          ><a href="#">영자신문사</a> <a href="#">운현방송국</a
+          ><a href="#">대학일자리본부</a>
+        </div>
+        <div class="line"></div>
+        <div class="part">
+          <a href="#">디지털소프트웨어</a><a href="#">덕성여대 경영학</a>
+          <a href="#">국제통상학과</a><a href="#">덕성 법학도</a
+          ><a href="#">두드리는 회계학</a>
+        </div>
+
+        <div class="part">
+          <a href="#">덕성여대 장터</a><a href="#">♡덕성여대 기숙사♡</a>
+          <a href="#">주의 없는 게시판</a><a href="#">덕성 연애방</a>
+        </div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <main class="content-wrap">
+      <section class="left-board">
+        <div class="board-title"><h2>비밀게시판</h2></div>
+
+        <div class="post-box">
+          <div class="post-header">
+            <div class="profile-pic"></div>
+            <div class="profile-info">
+              <img src="../img/익명사진.png" alt="익명 사진" />
+              <div class="profiletime">
+                <span class="nickname">익명</span>
+                <span class="time">4분 전</span>
+              </div>
+            </div>
+            <div class="header-actions">
+              <span>쪽지</span>
+              <span>신고</span>
+            </div>
+          </div>
+
+          <h2 class="post-title">학생복지스토어</h2>
+          <p class="post-content">
+            아이패드 에어13 m4 256기가 얼만지 봐줄사람!!! 학생인증이 안돼서
+            불편하다잉
+          </p>
+
+          <div class="post-stats">
+            <span class="stat-like"
+              ><img src="../img/빨간 좋아요.png" alt="좋아요" /> 0</span
+            >
+            <span class="stat-comment"
+              ><img src="../img/초록 채팅.png" alt="댓글" /> 0</span
+            >
+            <span class="stat-scrap"
+              ><img src="../img/에타 별.png" alt="댓글" /> 0</span
+            >
+          </div>
+
+          <div class="comment-input-area">
+            <input type="text" placeholder="댓글을 입력하세요." />
+            <button class="btn-submit">
+              <img src="../img/에타 연필.png" alt="댓글" />
+            </button>
+          </div>
+        </div>
+
+        <div class="comment-input-area"></div>
+
+        <button class="btn-list">📄 글 목록</button>
+
+        <div
+          id="questionInfoBox"
+          class="info-box hidden"
+          style="
+            border: 1px solid #05bcbc;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #05bcbc;
+            background-color: #d8fffc;
+          "
+        >
+          질문 글을 작성하면 게시판 상단에 일정 기간 노출되어, 더욱 빠르게
+          답변을 얻을 수 있게 됩니다.
+        </div>
+      </section>
+
+      <aside class="right-sidebar">
+        <div class="side-widget">
+          <div class="widget-header"><h4>실시간 인기 글</h4></div>
+          <div class="widget-content">
+            <a class="article">
+              <h5 class="title">천안함 피격 사건 16주기</h5>
+              <p class="snippet">
+                오늘 천안함 피격 사건 16주기인데 늦게 알아서...
+              </p>
+              <div class="meta">
+                <span class="board-name">비밀게시판</span>
+                <span class="status">
+                  <span class="likes"
+                    ><img src="../img/빨간 좋아요.png" alt="좋아요" /> 60</span
+                  >
+                  <span class="comments"
+                    ><img src="../img/초록 채팅.png" alt="댓글" /> 0</span
+                  >
+                </span>
+              </div>
+            </a>
+            <a class="article">
+              <h5 class="title">이 게시판 맨날 정독해요</h5>
+              <p class="snippet">올려주는 분들 다 고마워요!!!</p>
+              <div class="meta">
+                <span class="board-name">덕성여대~수유역 맛집</span>
+                <span class="status">
+                  <span class="likes"
+                    ><img src="../img/빨간 좋아요.png" alt="좋아요" /> 60</span
+                  >
+                  <span class="comments"
+                    ><img src="../img/초록 채팅.png" alt="댓글" /> 0</span
+                  >
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="side-widget">
+          <div class="widget-header">
+            <h4>HOT 게시물</h4>
+            <span class="more">더 보기</span>
+          </div>
+          <div class="widget-content">
+            <ul class="hot-list">
+              <li>
+                <span class="hot-title"
+                  >🗽 2026년 해외취업연수사업(K-Mov...</span
+                ><time>03/26 17:50</time>
+              </li>
+              <li>
+                <span class="hot-title">EF 앞에서 전화하시는 덕우님..</span
+                ><time>03/27 00:25</time>
+              </li>
+              <li>
+                <span class="hot-title">대강의동 이 광고</span
+                ><time>03/27 00:46</time>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="side-widget">
+          <div class="widget-header"><h4>학교 소식</h4></div>
+          <div class="widget-content">
+            <a class="article">
+              <h5 class="title">
+                🤝 덕성여자대학교 X 뮤지컬 빌리 엘리어트 제휴...
+              </h5>
+              <p class="snippet">
+                안녕하세요, 덕성여자대학교 제42대 총학생회입니다.
+              </p>
+              <div class="meta">
+                <span class="board-name">총학생회</span>
+                <span class="status">
+                  <span class="likes"
+                    ><img src="../img/빨간 좋아요.png" alt="좋아요" /> 2</span
+                  >
+                  <span class="comments"
+                    ><img src="../img/초록 채팅.png" alt="댓글" /> 0</span
+                  >
+                </span>
+              </div>
+            </a>
+            <a class="article">
+              <h5 class="title">🎥 운현방송국 도서관 내 촬영 공지 🎥</h5>
+              <p class="snippet">일시: 2026. 03. 30. (월) 13:00 - 14:00</p>
+              <div class="meta">
+                <span class="board-name">운현방송국</span>
+                <span class="status">
+                  <span class="likes"
+                    ><img src="../img/빨간 좋아요.png" alt="좋아요" /> 1</span
+                  >
+                  <span class="comments"
+                    ><img src="../img/초록 채팅.png" alt="댓글" /> 0</span
+                  >
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="side-widget">
+          <div class="widget-header">
+            <h4>최근 강의평</h4>
+            <span class="more">더 보기</span>
+          </div>
+          <div class="widget-content">
+            <a class="article">
+              <p class="stars">★★★★★</p>
+              <h5 class="title">번역 이론과 실습 : 이수영</h5>
+              <p class="snippet">교수님 강의력이 좋으셔서 이해가 잘 돼요!</p>
+            </a>
+            <a class="article">
+              <p class="stars">★★★★★</p>
+              <h5 class="title">한국현대사 : 홍정완</h5>
+              <p class="snippet">
+                강의 진짜 재밌고 지식도 알아갈 수 있어서 좋아요
+              </p>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="../JS/post.js"></script>
+  </body>
+</html>

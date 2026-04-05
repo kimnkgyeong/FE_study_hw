@@ -1,0 +1,155 @@
+.post-box {
+  border: 1px solid #e3e3e3;
+  max-width: 900px;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+.post-header {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.profile-pic {
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.profile-info {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.profile-info img {
+  width: 35px;
+  border-radius: 8px;
+}
+.nickname {
+  font-weight: bold;
+  font-size: 14px;
+}
+.time {
+  color: #a6a6a6;
+  font-size: 10px;
+}
+.header-actions span {
+  color: #a6a6a6;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.post-title {
+  padding: 0 15px;
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  color: #222;
+  margin-left: 15px;
+}
+.post-content {
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: #444;
+  margin-left: 15px;
+}
+
+.post-stats {
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  display: flex;
+  margin-left: 15px;
+}
+.post-stats span {
+  margin-right: 15px;
+}
+.stat-like {
+  color: #f91f15;
+  display: flex;
+  gap: 10px;
+}
+.stat-comment {
+  color: #00a2ff;
+  display: flex;
+  gap: 10px;
+}
+.stat-scrap {
+  color: #ffb800;
+  display: flex;
+  gap: 10px;
+}
+
+.post-buttons {
+  display: flex;
+  gap: 10px;
+}
+.btn-action {
+  padding: 8px 12px;
+  background: #f9f9f9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #444;
+  font-weight: bold;
+}
+
+.comment-input-area {
+  display: flex;
+  border-top: 1px solid #e3e3e3;
+  height: 40px;
+}
+.comment-input-area input {
+  flex-grow: 1;
+  border: none;
+  padding: 15px;
+  background: #fdfdfd;
+  outline: none;
+}
+
+.btn-submit {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+.btn-submit img {
+  width: 40px;
+  height: 40px;
+
+  background: #f91f15;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-list {
+  margin-top: 15px;
+  border: 1px solid #f91f15;
+  color: #f91f15;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.post-stats img {
+  width: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.profiletime {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-list img {
+  display: flex;
+}
