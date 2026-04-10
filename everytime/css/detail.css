@@ -224,8 +224,10 @@
 }
 
 .comment-footer {
-  font-size: 11px;
+  font-size: 10px;
   color: #a6a6a6;
+  display: flex;
+  padding-left: 15px;
 }
 
 .like-count {
@@ -297,4 +299,98 @@
   border: 1px solid #e3e3e3;
   padding: 10px 12px;
   border-radius: 2px;
+}
+.reply-input-wrapper {
+  display: flex;
+  border: 1px solid #e3e3e3;
+  margin-top: 10px; /* 위쪽 댓글과의 간격 */
+  height: 40px;
+  background: #fdfdfd;
+}
+
+.reply-input-wrapper input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  padding: 0 15px;
+  background: transparent;
+  outline: none;
+  font-size: 13px;
+}
+
+.reply-options {
+  display: flex;
+  align-items: center;
+}
+
+.reply-options label {
+  font-size: 12px;
+  color: #a6a6a6;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.reply-options input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+.btn-reply-submit {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn-reply-submit img {
+  width: 40px;
+  height: 40px;
+  background: #f91f15;
+}
+
+.mini-header {
+  display: none;
+}
+
+.hambugerbar {
+  display: flex;
+  align-items: center;
+}
+
+.hambugerbar img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 24px 24px;
+}
+
+.like-count img {
+  width: 10px;
+  display: flex;
+  gap: 15px;
+  height: 10px;
+}
+.like-count {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  font-size: 10px;
+}
+@media screen and (max-width: 990px) {
+  .right-sidebar {
+    display: none;
+  }
+  .header-inner {
+    display: none;
+  }
+  .board-title {
+    display: none;
+  }
+  .mini-header {
+    display: flex;
+    gap: 15px;
+  }
 }

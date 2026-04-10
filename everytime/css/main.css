@@ -90,6 +90,8 @@ header {
   background-color: #f9f9f9;
   border-bottom: 1px solid #e3e3e3;
   padding: 20px 0;
+  width: 100%;
+  display: flex;
 }
 
 .nav-container {
@@ -97,6 +99,9 @@ header {
   margin: 0 auto;
   display: flex;
   gap: 15px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
 }
 
 .part {

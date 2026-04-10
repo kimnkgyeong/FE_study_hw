@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에브리타임 로그인</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo-area">
+        <img src="../img/에타 로그인 로고.png" />
+      </div>
+
+      <form id="loginForm" onsubmit="event.preventDefault()">
+        <input
+          type="text"
+          id="userId"
+          placeholder="아이디"
+          autocomplete="off"
+        />
+        <input type="password" id="userPw" placeholder="비밀번호" />
+        <input type="submit" id="loginBtn" value="에브리타임 로그인" disabled />
+      </form>
+
+      <script src="../JS/login.js"></script>
+
+      <div class="footer-links">
+        <span>이용약관</span>
+        <span>개인정보처리방침</span>
+        <span>문의하기</span>
+        <span>ⓒ 에브리타임</span>
+      </div>
+    </div>
+  </body>
+</html>

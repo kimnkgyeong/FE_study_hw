@@ -33,33 +33,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 function toggleReplyForm(commentId) {
   const replyArea = document.getElementById(`reply-area-${commentId}`);
+  const openedReplyForm = replyArea.querySelector(".reply-input-form");
+  if (openedReplyForm) {
+    openedReplyForm.remove();
+    return;
+  }
 
-  if (replyArea.innerHTML === "") {
-    const replyHTML = `
-      <div class="reply-item">
-        <div class="comment-header">
-          <div class="user-info">
-            <div class="profile-placeholder"></div>
-            <span class="username author">익명(글쓴이)</span>
-          </div>
-          <div class="comment-actions">
-            <a href="#">공감</a> <a href="#">쪽지</a> <a href="#">신고</a>
-          </div>
+  const replyFormHTML = `
+      <div class="reply-input-wrapper">
+        <input type="text" id="replyInput-${commentId}" placeholder="대댓글을 입력하세요." />
+        <div class="reply-options">
+          <label>
+            <input type="checkbox" checked /> 익명
+          </label>
+          <button class="btn-reply-submit" onclick="submitReply(${commentId})">
+            <img src="../img/에타 연필.png" alt="대댓글 등록" />
+          </button>
         </div>
-        <div class="comment-content">
-          <input type="text" placeholder="대댓글을 입력하세요..." style="width:80%; border:none; background:transparent; outline:none;">
-          <button style="float:right; border:none; background:#c62917; color:#fff; border-radius:2px; padding:2px 5px; cursor:pointer;">등록</button>
-        </div>
-        <div class="comment-footer"><span class="time">방금 전</span></div>
       </div>
     `;
-    replyArea.innerHTML = replyHTML;
-  } else {
-    replyArea.innerHTML = "";
-  }
+  replyArea.insertAdjacentHTML("beforeend", replyFormHTML);
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   const btnSubmit = document.querySelector(".btn-submit");
   const mainInput = document.getElementById("mainCommentInput");
@@ -75,3 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+function submitReply(commentId) {
+  const replyInput = document.getElementById(`replyInput-${commentId}`);
+  const replyValue = replyInput.value;
+
+  if (replyValue.trim() === "") {
+    alert("대댓글 내용을 입력해주세요!");
+  } else {
+    alert("작성한 대댓글: " + replyValue);
+    replyInput.value = ""; // 전송 후 입력창 비우기
+
+    // (선택) 대댓글 전송 후 창을 자동으로 닫고 싶다면 아래 주석을 해제하세요.
+    // document.getElementById(`reply-area-${commentId}`).innerHTML = "";
+  }
+}

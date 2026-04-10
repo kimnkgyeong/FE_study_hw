@@ -1,4 +1,4 @@
-=<!doctype html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -32,7 +32,12 @@
         </div>
       </div>
     </header>
-
+    <div class="mini-header">
+      <div class="hambugerbar">
+        <img src="../img/햄버거바.png" alt="햄버거바" />
+      </div>
+      <p>비밀게시판</p>
+    </div>
     <nav class="sub-nav">
       <div class="nav-container">
         <div class="line"></div>
@@ -128,7 +133,9 @@
                   <span class="username">익명2</span>
                 </div>
                 <div class="comment-actions">
-                  <a href="#">대댓글</a>
+                  <a href="javascript:void(0)" onclick="toggleReplyForm(1)"
+                    >대댓글</a
+                  >
                   <a href="#">공감</a>
                   <a href="#">쪽지</a>
                   <a href="#">신고</a>
@@ -159,7 +166,9 @@
               <div class="comment-content">도덕이 ❤️</div>
               <div class="comment-footer">
                 <span class="time">02/09 22:35</span>
-                <span class="like-count">👍 1</span>
+                <span class="like-count"
+                  ><img src="../img/빨간 좋아요.png" alt="좋아요" /> 1</span
+                >
               </div>
               <div id="reply-area-2" class="reply-container">
                 <div class="reply-item">
@@ -337,7 +346,6 @@
         </div>
       </aside>
     </main>
-
     <script src="../JS/detail.js"></script>
   </body>
 </html>
